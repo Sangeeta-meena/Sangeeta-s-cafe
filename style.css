@@ -1,0 +1,2360 @@
+
+/* Navigation Bar Section*/
+
+.navigationBar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navigationBar img{
+    width: 8vw;
+}
+#logo{
+    flex-basis: 14%;
+}
+.home{
+    flex-basis: 14%;
+}
+.menu{
+    flex-basis: 14%;
+}
+.about{
+    flex-basis: 14%;
+}
+.location{
+    flex-basis: 14%;
+}
+.navigationButton{
+    flex-basis: 30%;
+}
+div.navigationItems.navigationButton{
+    display: flex;
+    justify-content: right;
+    margin-right: 2%;
+}
+.navigationItems button{
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #c09b70, #723001);
+    color: white;
+    width: 50%;
+    height: 80%;
+}
+.navigationItems button:hover{
+    color:black;
+    background: white;
+    border: 3px solid #c09b70;
+}
+.navigationItems a{
+    color: white;
+    text-decoration: none;
+}
+
+.navigationItems{
+    position: relative;
+}
+
+.navigationItems a{
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+  }
+  
+  .navigationItems a:hover {
+    transform: scale(1.2);
+    color: #c09b70;
+  }
+
+
+  /* Homepage Section */
+
+
+  .homepage{
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+  }
+  #home{
+    margin-top: 12vh;
+  }
+
+  /* background video*/
+  .bgVideo{
+    width: 100%;
+    height: 85vh;
+    object-fit:fill;
+    z-index: -2;
+    position: absolute;
+  }
+
+  .bgImage img{
+    width: 100%;
+    height: 85vh;
+    object-fit:fill;
+    z-index: -1;
+    position: absolute;
+    margin-left: 13%;
+    transform: scale(1.1);
+    margin-top: -1.8%;
+  }
+
+.bgImage{
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    object-fit: fill;
+}
+
+.homeElements{
+    width: 100%;
+    height:85vh;
+    display: grid;
+    grid-template-columns: 1.2fr 3fr 1fr;
+    grid-template-rows: 0.8fr 1.5fr 1.5fr;
+    margin-top: 0%;
+    object-fit: fill;
+    margin-left: -100%;
+}
+
+#homeGirl{
+    grid-row: span 3;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homeGirl img{
+    width: 340%;
+    margin-top: 10%;
+    margin-left: -15%;
+    transition: transform 0.5s ease;
+}
+#homeGirl img:hover{
+    transform: scale(1.03);
+}
+#sangeetaCafe img{
+    width: 70%;
+}
+
+#homeSpace{
+    grid-row: span 3;
+}
+#tagLine p{
+    font-weight: bold;
+    font-size: large;
+    color: #6D512A;
+    margin-top: 3%;
+}
+#frontParagraph p{
+    color: #4A3518;
+}
+
+
+/* Specialities Section */
+
+
+#specialBg{
+    background-color: #9A6637;
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 4fr 1fr 1fr;
+}
+#ourSpecialities{
+    grid-column: span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ourSpecialities p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    z-index: 5;
+    margin-top: 2%;
+}
+#specialGirl{
+    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+#specialGirl img{
+    width: 250%;
+    margin-bottom: -15.5%;
+    z-index: 5;
+}
+
+.specialVarieties{
+    display: none;
+}
+
+#caption{
+    display: none;
+}
+
+#specialCoffee{
+    display: flex;
+    align-items: end;
+}
+#specialCoffee img{
+    width: 150%;
+    margin-left: -50%;
+    margin-bottom: 5%;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCoffee img:hover{
+    transform: scale(1.08);
+}
+#specialCake{
+    display: flex;
+    align-items: end;
+}
+#specialCake img{
+    width: 150%;
+    margin-left: -25%;
+    margin-bottom: 10%;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCake img:hover{
+    transform: scale(1.08);
+}
+#specialCookies{
+    display: flex;
+    align-items: end;
+}
+#specialCookies img{
+    width: 150%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCookies img:hover{
+    transform: scale(1.08);
+}
+#specialSpace{
+    grid-row: span 3;
+}
+.caption p{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 180%;
+    font-style: normal;
+    color: white;
+    margin-top: -20%;
+}
+.caption{
+    z-index: 5;
+}
+
+#p1{
+    margin-left: 4%;
+}
+#p2{
+    margin-left: 33%;
+}
+#p3{
+    margin-left: 57%;
+}
+#specialDarkBg{
+    height: 55vh;
+    width: 80%;
+    background-color: #4A3518;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 10%;
+}
+.borderDesign{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+
+}
+.borderDesign img{
+    width: 60%;
+    margin-top: -7%;
+}
+
+/*Reviews Section*/
+
+
+.reviews{
+    background-color: #DBD8D3;
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+.reviewsTitle{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.reviewsTitle p{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-size: 200%;
+    font-style: normal;
+    color: #4A3518;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    align-content: space-around;
+    align-items: center;
+    gap: 0% 8%;
+}
+
+div.card{
+    flex-basis: 20%;
+    height: 70%;
+    background-color: #4F5537;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.one, .two, .three{
+    flex-basis: 20%;
+
+}
+
+.cards img{
+    width: 100%;
+    margin-top: 10%;
+}
+img.star{
+    width: 80%;
+    margin-top: -20%;
+}
+.cards p{
+    color: #DBD8D3;
+    font-size:medium;
+    text-align: center;
+    margin: 10%;
+    margin-top: -10%;
+}
+
+.reviewsDecoration{
+    display: grid;
+    grid-template-rows: 1fr 1.8fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+.reviewsDecoration img{
+    width: 45%;
+}
+
+div.leftCat{
+    margin-left: 20%;
+}
+div.middleCat{
+    display: flex;
+    justify-content: center;
+}
+div.rightCat{
+   margin-right: 20%;
+}
+.rightCat img{
+    transform: scale(1.2);
+    margin-left: 50%;
+    margin-top: 5%;
+}
+
+img.avatar:hover{
+    transform: scale(1.08);
+}
+
+.footer{
+    background-color: #392201;
+    height: 60vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.9fr 2fr 0.5fr;
+}
+
+div.footLogo{
+    grid-row: span 2;
+}
+.footLogo img{
+    width: 90%;
+    margin-top: 20%;
+}
+div.footGirl{
+    display: flex;
+    justify-content: center;
+    grid-row: span 2;
+    overflow: hidden;
+}
+.footGirl img{
+    width: 300%;
+    transition: transform 0.3s ease;
+}
+.footGirl img:hover{
+    transform: scale(1.1);
+}
+
+.footMenu p{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-size: 150%;
+    font-style: normal;
+    color: white;
+    margin-top: 8%;
+}
+.footMenu{
+    display: flex;
+    align-items: center;
+}
+
+.menuContent1 a, .menuContent2 a{
+    font-size: medium;
+    color: white;
+    margin-top: 10%;
+    text-decoration: none;
+}
+.menuContent1, .menuContent2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-content:flex-start;
+
+}
+
+div.footSpace{
+    grid-row: span 2;
+}
+div.web{
+    grid-column: span 6;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+div.web a{
+    color: white;
+    font-size: medium;
+    margin-right: 2%;
+    text-decoration: none;
+}
+div.footConnect{
+    display: flex;
+    align-items: center;
+}
+
+div.connectContent{
+    display: flex;
+    flex-direction: column;
+}
+
+div.connectContent a{
+    color: white;
+    font-size: medium;
+    margin-top: 10%;
+    text-decoration: none;
+}
+.footConnect p{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight:bolder;
+    font-size: 150%;
+    font-style: normal;
+    color: white;
+    margin-top: 8%;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#aboutTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    z-index: 5;
+    margin-top: 2%;
+}
+#aboutBg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #4F5537;
+}
+
+#aboutTitle{
+    width: 100%;
+    height: 20vh;
+    background-color: #4F5537;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 240vh;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #D9D8D2;
+    overflow: hidden;
+}
+
+#cafeImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cafeImage img{
+    width: 150%;
+    margin-left: 30%;
+}
+
+@font-face {
+    font-family: 'myCustomFont';
+    src: url("./ananda-black-font/AnandaBlackPersonalUseRegular-rg9Rx.ttf") format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#paraOne p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#paraTwo{
+    grid-column: span 2;
+}
+#paraTwo p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+#paraThree{
+    margin-right: -80%;
+}
+
+#paraThree p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#peopleImage{
+    overflow: hidden;
+}
+#peopleImage img{
+    width: 50%;
+    margin-left: 40%;
+}
+#paraFour{
+    grid-column: span 2;
+}
+
+#paraFour p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+#glassImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#glassImage img{
+    width: 80%;
+    margin-left: 50%;
+    margin-top: -20%;
+    margin-bottom: 10%;
+}
+#paraFive p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.aboutUsBg{
+    background-color: #9A6637;
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.outerFrame{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frame{
+    width: 90%;
+    height: 90%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+#menuTitle{
+    width: 100%;
+    height: 20vh;
+    background-color:#723001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    z-index: 5;
+    margin-top: 2%;
+}
+
+.menus{
+    width: 100%;
+    height: 90vh;
+    background-color: #723001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenu{
+    width: 90%;
+    height: 90%;
+    background-color: #4A3518;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.menuTitle{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    z-index: 5;
+    margin-top: 2%;
+}
+
+li{
+    list-style-type: none;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 15px;
+    margin-left: 10%;
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+.menuImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.hotCoffeeImage img{
+    width: 100%;
+    margin-left: -20%;
+}
+
+.coldCoffeeImage img{
+    width: 110%;
+    margin-left: -15%;
+}
+
+.snacksImage img{
+    width: 90%;
+    margin-left: -15%;
+}
+
+.cupCakesImage img{
+    width: 100%;
+    margin-left: -15%;
+}
+
+.dessertImage img{
+    width: 120%;
+    margin-left: -15%;
+}
+
+.teaImage img{
+    width: 80%;
+    margin-left: -15%;
+}
+
+.cookiesImage img{
+    width: 90%;
+    margin-left: -15%;
+}
+
+.lastSubMenu{
+    margin-bottom: 5%;
+}
+
+.menuBody{
+    background-color: #723001;
+}
+
+.chef img{
+    width: 40%;
+    margin-left: 73%;
+    margin-top: 3%;
+    position: sticky;
+    justify-items: right;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+
+.chef img:hover{
+    transform: scale(1.1);
+}
+
+img.menuLogo{
+    width: 15%;
+    margin-left: -2.5%;
+    margin-top: 1.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+.locationBg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3B1F0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationHeading{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationHeading p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    z-index: 5;
+    margin-top: -2%;
+}
+
+.locationCard{
+    border-radius: 25px;
+    background-color: #EBE6E2;
+    width: 90%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.cafeLocationImage{
+    display: flex;
+    justify-content: center;
+}
+
+.cafeLocationImage img{
+    width: 130%;
+}
+
+p.visit{
+    font-size: larger;
+    color: #3B1F0A;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    z-index: 5;
+    margin-top: 2%;
+}
+
+.locationDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+p.details{
+    color:#3B1F0A;
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+}
+
+.locationChefImage img{
+    width: 45%;
+    margin-left: 55%;
+    margin-top: 1%;
+    position: sticky;
+    justify-items: right;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+.locationChefImage img:hover{
+    transform: scale(1.1);
+}
+
+#menu{
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 480px) and (max-width: 900px){
+ 
+
+/* Navigation Bar Section*/
+
+.navigationBar{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 0%;
+    align-items: center;
+    height: 12vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigationBar img{
+    width: 25vw;
+    margin-left: -15%;
+}
+#logo{
+    flex-basis: 40%;
+    overflow: hidden;
+}
+.location{
+    flex-basis: 2%;
+}
+
+.navigationButton{
+    flex-basis: 30%;
+}
+
+.navigationItems button{
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #c09b70, #723001);
+    color: white;
+    width: 100%;
+    height: 100px;
+}
+.navigationItems a{
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+    margin-left: -20%;
+}
+
+.navigationItems a{
+    display: inline-block;
+    padding: 10px 20px;
+
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+  }
+
+  /* Homepage Section */
+  #home{
+    margin-top: 12vh;
+  }
+
+  .homepage{
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* background video*/
+  .bgVideo{
+    width: 100%;
+    height: 85vh;
+    object-fit:cover;
+    z-index: -2;
+    position: absolute;
+  }
+
+  .bgImage img{
+    width: 100%;
+    height: 85vh;
+    object-fit:fill;
+    z-index: -1;
+    position: absolute;
+    margin-left: -40%;
+    scale: 2.3;
+    margin-top: -7.8%;
+  }
+
+.bgImage{
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    object-fit: fill;
+}
+
+#homeGirl{
+    grid-row: span 3;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homeGirl img{
+    width: 500%;
+    margin-top: 220%;
+    margin-left: 15%;
+    transition: transform 0.5s ease;
+}
+
+#sangeetaCafe img{
+    width: 100%;
+    margin-top: -20%;
+    margin-left: -30%;
+}
+#tagLine p{
+    font-weight: bold;
+    font-size: xx-large;
+    color: #6D512A;
+    margin-top: 3%;
+    margin-left: -30%;
+}
+#frontParagraph p{
+    color: #4A3518;
+    font-size: x-large;
+    margin-left: 10%;
+}
+
+
+/* Specialities Section */
+
+
+#specialBg{
+    background-color: #9A6637;
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 4fr 1fr 1fr;
+}
+#ourSpecialities{
+    grid-column: span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ourSpecialities p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    z-index: 5;
+    margin-top: 2%;
+}
+#specialGirl{
+    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: visible;
+}
+#specialGirl img{
+    width: 450%;
+    margin-bottom: -25.5%;
+    margin-left: 25%;
+    z-index: 5;
+}
+
+#specialCoffee{
+    display: flex;
+    align-items: end;
+}
+#specialCoffee img{
+    width: 250%;
+    margin-left: 15%;
+    margin-bottom: 200px;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCake{
+    display: flex;
+    align-items: end;
+}
+#specialCake img{
+    width: 250%;
+    margin-left: -80%;
+    margin-bottom: -20px;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCookies{
+    display: flex;
+    align-items: end;
+}
+#specialCookies img{
+    width: 220%;
+    margin-left: -160%;
+    margin-bottom: -170%;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialSpace{
+    grid-row: span 3;
+}
+.caption p{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 180%;
+    font-style: normal;
+    color: white;
+}
+.caption{
+    z-index: 5;
+}
+
+#p1{
+    margin-left: 112%;
+}
+p#p1{
+    margin-top: -240px;
+}
+#p2{
+    margin-left: 20%;
+}
+p#p2{
+    margin-top: -5px;
+}
+#p3{
+    margin-left: -85%;
+}
+p#p3{
+    margin-top: 155%;
+}
+
+#specialDarkBg{
+    height: 70vh;
+    width: 80%;
+    background-color: #4A3518;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    margin-top: 20%;
+    position: absolute;
+    z-index: 1;
+    margin-top: 15%;
+}
+.borderDesign{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.borderDesign img{
+    width: 150%;
+    margin-top: -27.5%;
+}
+
+/*Reviews Section*/
+
+
+.reviews{
+    background-color: #DBD8D3;
+    display: flex;
+    width: 100%;
+    height:50vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.cards img{
+    width: 100%;
+    margin-top: 10%;
+}
+.reviewsDecoration{
+    display: grid;
+    grid-template-rows: 1fr 1.8fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+.reviewsDecoration img{
+    width: 45%;
+}
+
+div.leftCat{
+    margin-left: 20%;
+    margin-top: 20%;
+}
+div.middleCat{
+    display: flex;
+    justify-content: center;
+    margin-top: 15%;
+}
+div.rightCat{
+   margin-right: 20%;
+   margin-top: 10%;
+}
+.rightCat img{
+    transform: scale(1.2);
+    margin-left: 50%;
+    margin-top: 14%;
+}
+
+img.avatar:hover{
+    transform: scale(1.08);
+}
+
+.footer{
+    background-color: #392201;
+    height: 30vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.9fr 2fr 0.5fr;
+}
+
+div.footGirl{
+    display: flex;
+    justify-content: center;
+    grid-row: span 2;
+    overflow: hidden;
+}
+.footGirl img{
+    width: 300%;
+    transition: transform 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.frame{
+    width: 90%;
+    height: 90%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+#menuTitle{
+    width: 100%;
+    height: 18vh;
+    background-color:#723001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    z-index: 5;
+    margin-top: 15%;
+}
+
+.menus{
+    width: 100%;
+    height: 40vh;
+    background-color: #723001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenu{
+    width: 90%;
+    height: 90%;
+    background-color: #4A3518;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.menuTitle{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    z-index: 5;
+    margin-top: 2%;
+}
+
+
+.chef img{
+    width: 40%;
+    margin-left: 73%;
+    margin-top: 23%;
+    position: sticky;
+    justify-items: right;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+
+img.menuLogo{
+    width: 15%;
+    margin-left: -2.5%;
+    margin-top: 1.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+.locationBg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3B1F0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.locationHeading{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationHeading p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    z-index: 5;
+    margin-top: -18%;
+}
+
+.locationCard{
+    border-radius: 25px;
+    background-color: #EBE6E2;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cafeLocationImage{
+    display: flex;
+    justify-content: center;
+}
+
+.cafeLocationImage img{
+    width: 130%;
+}
+
+p.visit{
+    font-size: larger;
+    color: #3B1F0A;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    z-index: 5;
+    margin-top: 2%;
+    margin-left: -25%;
+}
+
+.locationDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.details{
+    color:#3B1F0A;
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+}
+
+.locationChefImage img{
+    width: 65%;
+    margin-left: 50%;
+    margin-top: 1%;
+    position: sticky;
+    justify-items: right;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+.locationChefImage img:hover{
+    transform: scale(1.1);
+}
+
+#menu{
+    margin-top: 5%;
+}
+
+
+
+/*About for ipad*/
+
+.aboutUsBg{
+    background-color: #9A6637;
+    display: flex;
+    width: 100%;
+    height:45vh;
+    position: relative;
+    overflow: hidden;
+}
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*   For Mobile Phones */
+
+@media (min-width: 320px) and (max-width: 480px){
+
+    /* Navigation Bar Section*/
+.navigationBar{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 0%;
+    align-items: left;
+    height: 24vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.navigationBar img{
+    width: 35vw;
+    margin-left: -15%;
+}
+#logo{
+    flex-basis: 40%;
+    overflow: hidden;
+}
+.location{
+    flex-basis: 2%;
+}
+
+.navigationItems button{
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: linear-gradient(to right, #c09b70, #723001);
+    color: white;
+    width: 90%;
+    height: 100px;
+    margin-right: 0%;
+}
+
+.navigationItems a{
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease; 
+    font-size: large;
+  }
+
+  /* Homepage Section */
+  #home{
+    margin-top: 24vh;
+  }
+
+  /* background video*/
+  .bgVideo{
+    width: 100%;
+    height: 85vh;
+    object-fit:cover;
+    z-index: -2;
+    position: absolute;
+  }
+
+  .bgImage img{
+    width: 100%;
+    height: 85vh;
+    object-fit:fill;
+    z-index: -1;
+    position: absolute;
+    margin-left: -60%;
+    scale: 3.25;
+    margin-top: -7.8%;
+  }
+
+.bgImage{
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+    object-fit: fill;
+}
+
+#homeGirl{
+    grid-row: span 3;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#homeGirl img{
+    width: 700%;
+    margin-top: 450%;
+    margin-left: 15%;
+    transition: transform 0.5s ease;
+}
+
+#sangeetaCafe img{
+    width: 120%;
+    margin-top: 0%;
+    margin-left: -30%;
+}
+#tagLine p{
+    font-weight: bold;
+    font-size: x-large;
+    color: #6D512A;
+    margin-top: 3%;
+    margin-left: -30%;
+}
+#frontParagraph p{
+    color: #4A3518;
+    font-size: large;
+    margin-left: -30%;
+    margin-bottom: 140%;
+}
+
+
+/* Specialities Section */
+
+
+#specialBg{
+    background-color: #9A6637;
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 4fr 1fr 1fr;
+}
+#ourSpecialities{
+    grid-column: span 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#ourSpecialities p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    z-index: 5;
+    margin-top: 5%;
+}
+#specialGirl{
+    grid-row: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: visible;
+}
+#specialGirl img{
+    width: 550%;
+    margin-bottom: -35.5%;
+    margin-left: 65%;
+    z-index: 5;
+}
+
+#specialCoffee{
+    display: flex;
+    align-items: end;
+}
+#specialCoffee img{
+    width: 250%;
+    margin-left: 15%;
+    margin-bottom: 250px;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCake{
+    display: flex;
+    align-items: end;
+}
+#specialCake img{
+    width: 300%;
+    margin-left: -90%;
+    margin-bottom: 50px;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialCookies{
+    display: flex;
+    align-items: end;
+}
+#specialCookies img{
+    width: 230%;
+    margin-left: -150%;
+    margin-bottom: -150%;
+    z-index: 5;
+    transition: transform 0.5s ease;
+}
+#specialSpace{
+    grid-row: span 3;
+}
+.caption p{
+    font-family: "Edu TAS Beginner", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 120%;
+    font-style: normal;
+    color: white;
+}
+.caption{
+    z-index: 5;
+}
+
+#p1{
+    margin-left: 100%;
+}
+p#p1{
+    margin-top: -260px;
+}
+#p2{
+    margin-left: 15%;
+}
+p#p2{
+    margin-top: -60px;
+}
+#p3{
+    margin-left: -85%;
+}
+p#p3{
+    margin-top: 145%;
+}
+
+#specialDarkBg{
+    height: 70vh;
+    width: 80%;
+    background-color: #4A3518;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    margin-top: 20%;
+    position: absolute;
+    z-index: 1;
+}
+.borderDesign{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.borderDesign img{
+    width: 150%;
+    margin-top: -22.5%;
+}
+
+/*Reviews Section*/
+
+
+.reviews{
+    background-color: #DBD8D3;
+    display: flex;
+    width: 100%;
+    height:50vh;
+    position: relative;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.cards img{
+    width: 100%;
+    margin-top: 10%;
+}
+.reviewsDecoration{
+    display: grid;
+    grid-template-rows: 1fr 1.8fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+.reviewsDecoration img{
+    width: 45%;
+}
+
+div.leftCat{
+    margin-left: 20%;
+    margin-top: 40%;
+}
+div.middleCat{
+    display: flex;
+    justify-content: center;
+    margin-top: 35%;
+}
+div.rightCat{
+   margin-right: 20%;
+   margin-top: 10%;
+}
+.rightCat img{
+    transform: scale(1.2);
+    margin-left: 50%;
+    margin-top: 34%;
+}
+
+img.avatar:hover{
+    transform: scale(1.08);
+}
+
+.footer{
+    background-color: #392201;
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr 1fr 1fr;
+    grid-template-rows: 0.9fr 2fr 0.5fr;
+}
+
+div.footGirl{
+    display: flex;
+    justify-content: center;
+    grid-row: span 2;
+    overflow:hidden;
+}
+.footGirl img{
+    width: 300%;
+    transition: transform 0.3s ease;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.frame{
+    width: 90%;
+    height: 90%;
+    margin: 2%;
+    border-radius: 20px;
+}
+
+#menuTitle{
+    width: 100%;
+    height: 35vh;
+    background-color:#723001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menuTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    z-index: 5;
+    margin-top: 45%;
+}
+
+.menus{
+    width: 100%;
+    height: 55vh;
+    background-color: #723001;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subMenu{
+    width: 90%;
+    height: 90%;
+    background-color: #4A3518;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 0.4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.menuTitle{
+    grid-column: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 200%;
+    z-index: 5;
+    margin-top: 2%;
+}
+
+
+.hotCoffeeImage img{
+    width: 150%;
+    margin-left: -20%;
+}
+
+.coldCoffeeImage img{
+    width: 160%;
+    margin-left: -15%;
+}
+
+.snacksImage img{
+    width: 140%;
+    margin-left: -15%;
+}
+
+.cupCakesImage img{
+    width: 150%;
+    margin-left: -15%;
+}
+
+.dessertImage img{
+    width: 170%;
+    margin-left: -15%;
+}
+
+.teaImage img{
+    width: 130%;
+    margin-left: -15%;
+}
+
+.cookiesImage img{
+    width: 130%;
+    margin-left: -15%;
+}
+.cookiesImage{
+    overflow: visible;
+}
+
+.lastSubMenu{
+    margin-bottom: 5%;
+}
+
+
+.chef img{
+    width: 40%;
+    margin-left: -10%;
+    margin-top: 73%;
+    position: sticky;
+    justify-items: right;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    transform:scaleX(-1);
+    transition: transform 0.3s ease;
+}
+
+img.menuLogo{
+    width: 15%;
+    margin-left: -2.5%;
+    margin-top: 1.5%;
+    position: absolute;
+    z-index: 2;
+}
+
+.locationBg{
+    width: 100vw;
+    height: 100vh;
+    background-color: #3B1F0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.locationHeading{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationHeading p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    z-index: 5;
+    margin-top: -18%;
+}
+
+.locationCard{
+    border-radius: 25px;
+    background-color: #EBE6E2;
+    width: 90%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cafeLocationImage{
+    display: flex;
+    justify-content: center;
+}
+
+.cafeLocationImage img{
+    width: 130%;
+}
+
+p.visit{
+    font-size: larger;
+    color: #3B1F0A;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 250%;
+    z-index: 5;
+    margin-top: 2%;
+    margin-left: -25%;
+}
+
+.locationDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p.details{
+    color:#3B1F0A;
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 150%;
+    font-style: normal;
+}
+
+.locationChefImage img{
+    width: 65%;
+    margin-left: 52%;
+    margin-top: 10%;
+    position: sticky;
+    justify-items: right;
+    position: absolute;
+    z-index: 5;
+    position: fixed;
+    transition: transform 0.3s ease;
+}
+.locationChefImage img:hover{
+    transform: scale(1.1);
+}
+
+#menu{
+    margin-top: 5%;
+}
+
+
+
+/*  ABout for phones */
+
+
+#aboutTitle p{
+    font-size: larger;
+    color: white;
+    font-family: "Carter One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300%;
+    z-index: 5;
+    margin-top: 2%;
+}
+#aboutBg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #4F5537;
+}
+
+#aboutTitle{
+    width: 100%;
+    height: 20vh;
+    background-color: #4F5537;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutContent{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 240vh;
+    margin-bottom: 5%;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #D9D8D2;
+    overflow: hidden;
+}
+
+#cafeImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cafeImage img{
+    width: 200%;
+    margin-left: 30%;
+}
+
+@font-face {
+    font-family: 'myCustomFont';
+    src: url("./ananda-black-font/AnandaBlackPersonalUseRegular-rg9Rx.ttf") format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+
+#paraOne p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#paraTwo{
+    grid-column: span 2;
+}
+#paraTwo p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+
+#paraThree{
+    margin-right: -80%;
+}
+
+#paraThree p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+#peopleImage{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+#peopleImage img{
+    width: 100%;
+    margin-left: 27%;
+    object-fit: contain;
+}
+#paraFour{
+    grid-column: span 2;
+}
+
+#paraFour p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-right: 10%;
+}
+
+#glassImage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#glassImage img{
+    width: 150%;
+    margin-left: 50%;
+    margin-top: -20%;
+    margin-bottom: 10%;
+}
+#paraFive p{
+    font-family: "MyCustomFont", cursive;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 100%;
+    font-style: normal;
+    margin-left: 20%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.aboutUsBg{
+    background-color: #9A6637;
+    display: flex;
+    width: 100%;
+    height:85vh;
+    position: relative;
+    overflow: hidden;
+}
+}
