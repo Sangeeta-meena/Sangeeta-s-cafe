@@ -1659,6 +1659,7 @@ p.details{
 .navigationBar img{
     width: 35vw;
     margin-left: -15%;
+    margin-top: 15%;
 }
 #logo{
     flex-basis: 40%;
@@ -1729,7 +1730,7 @@ p.details{
     align-items: center;
 }
 #homeGirl img{
-    width: 700%;
+    width: 600%;
     margin-top: 450%;
     margin-left: 15%;
     transition: transform 0.5s ease;
@@ -2002,7 +2003,7 @@ a{
 
 .menus{
     width: 100%;
-    height: 55vh;
+    height: 59vh;
     background-color: #723001;
     display: flex;
     justify-content: center;
@@ -2083,7 +2084,7 @@ a{
 
 .chef img{
     width: 40%;
-    margin-left: -10%;
+    margin-left: -13%;
     margin-top: 73%;
     position: sticky;
     justify-items: right;
